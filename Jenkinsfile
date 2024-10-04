@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/peeturasanen/CalculatorDocker.git'
+                git branch: 'main', url:'https://github.com/peeturasanen/CalculatorDocker.git'
             }
         }
         stage('Run Tests') {
